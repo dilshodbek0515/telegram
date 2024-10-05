@@ -73,3 +73,15 @@ function botMsg() {
         currentTime();
     }, 1000);
 }
+
+
+// sidebar
+const side = document.querySelector(".sidebar")
+function sidebar() {
+    side.style.display = "block"
+    side.style.marginLeft = "37%"
+}
+function sidebarClose() {
+    side.style.display = "none"
+    side.style.marginLeft = "0%"
+}
