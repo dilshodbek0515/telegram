@@ -24,6 +24,8 @@ body {
     flex-direction: column;
 }
 
+/* navbar */
+
 .navbar,
 .msg,
 .hero {
@@ -56,14 +58,99 @@ body {
     color: rgba(0, 0, 0, 0.837);
 }
 
+/* hero */
 
 .hero {
     flex: 1;
+    overflow: auto;
+    background-image: url("./assets/images/HD-wallpaper-whatsapp-dark-mode-whatsapp-thumbnail.jpg");
+    background-size: cover;
+    padding: 10px;
 }
 
+.hero::-webkit-scrollbar {
+    width: 0;
+}
+
+.mess.me {
+    width: 250px;
+    padding: 12px;
+    background-color: #bbffbb;
+    border-radius: 16px 16px 16px 0px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.mess {
+    width: 250px;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 16px 16px 0px 16px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.mess h3 {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+}
+
+
+/* msg */
 .msg {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 1px solid black;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+}
+
+.bi-filetype-gif {
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+}
+
+.bi-paperclip,
+.bi-mic,
+.bi-send-fill {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.bi-paperclip {
+    margin-left: -20px;
+}
+
+.send {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.input {
+    flex: 1;
+    height: 40px;
+    padding: 5px 20px 5px 5px;
+    border: transparent;
+    outline: none;
+    font-size: 20px;
+
+}
+
+.forma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
